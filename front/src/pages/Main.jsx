@@ -1,5 +1,6 @@
 import React from 'react'
-
+import imagen from '../assets/huacaya.jpg'
+import imagenPortada from '../assets/portada.jpg'
 const Main = () => {
     return (
         <main>
@@ -8,7 +9,7 @@ const Main = () => {
                 className="hero bg-cover bg-center h-screen text-white"
                 style={{
                     backgroundImage:
-                        'url(https://via.placeholder.com/1920x1080)'
+                        `url(${imagenPortada})`
                 }}
             >
                 <div className="container mx-auto h-full flex flex-col justify-center items-center text-center">
@@ -34,7 +35,7 @@ const Main = () => {
                         {/* Example Product Card */}
                         <div className="bg-white p-4 rounded-lg shadow-lg">
                             <img
-                                src="https://via.placeholder.com/300"
+                                src={imagen}
                                 alt="Product"
                                 className="w-full h-64 object-cover rounded-lg mb-4"
                             />
